@@ -1,3 +1,19 @@
+1. Tell me all properties names that have "OS" in the name (ensure the test is case insensitive)
+
+    ```names of bes properties whose (name of it as lowercase contains "os")```
+
+2. Tell me the source, source sev, name and release date for all fixlets within the patches for win site (also known as Enterprise Security)
+
+  ```(source of it, source severity of it, name of it,source release dates of it) of bes fixlets whose (name of site of it as string is "Enterprise Security")```
+
+3. Tell me all machines in a group (Create a computer group named "My Group", place the group within your master action site, and define with a relevance of True)
+
+  ```names of members of bes computer group whose (name of it as string is "My Group")```
+
+4. Tell me how many machines per OS (Hint: It, multiplicity of it of unique values of ____________)
+
+  ```(it, multiplicity of it) of unique values of  operating systems of bes computers```
+
 6. Tell me what machines are duplicates within your environment...
 
   ```names of unique values whose (multiplicity of it > 1) of bes computers```
