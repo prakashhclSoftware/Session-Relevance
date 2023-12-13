@@ -14,6 +14,10 @@
 
   ```(it, multiplicity of it) of unique values of  operating systems of bes computers```
 
+5. Order all machines by name (Hint: unique values)
+
+  ```unique values of names of bes computers```
+
 6. Tell me what machines are duplicates within your environment...
 
   ```names of unique values whose (multiplicity of it > 1) of bes computers```
@@ -30,6 +34,14 @@
     
   ```names of bes computer whose (exists bes computer group of it and exists relevant fixlets whose(cve id list of it contains "CVE-2023-20588") of it)```
 
+10. Tell me what fixlets have this relevance (Where the string is selected by you)
+
+   ```Q: (name of it) of bes fixlets whose (relevance of it contains "(evaluation of client license = true)")```
+   
+11. Tell me what fixlets have this action script (Where the string is selected by you)
+
+    ```Q: names of bes fixlets whose (exists scripts whose(it contains "791263ea4e1eb9d4ddeaca1c6dafc080c97e217dc26e34807618fad078fcf2f8") of actions of it )```
+
 12. Tell me what machines of a computer group are relevant to a given patch... Show me 2 ways... WHAT ARE OUR OPTIONS? What sucks less... And why is this a painful query?
 
     ``` names of applicable computers whose(name of bes computer group of it as string is "My Group") of bes fixlets whose(id of it =503337105) ```
@@ -41,4 +53,8 @@
 
   T:0.4090
 Execution time is less for 2nd query. 
-  
+
+13. Tell me all machines that have become relevant for Fixlet X since Date Y (Where Y is selected by you)
+    
+    ```Q:(names of it, last report time of it) of applicable computers whose(last report time of it > now-7*day) of bes fixlets whose (id of it = 3277)```
+
