@@ -2,7 +2,7 @@
 
   ```names of unique values whose (multiplicity of it > 1) of bes computers```
  
-8. Tell me what machines within a group are vulnerable for said fixlet (choose a fixlet within the BES support site that is relevant to all your machines)
+7. Tell me what machines within a group are vulnerable for said fixlet (choose a fixlet within the BES support site that is relevant to all your machines)
    
   ```names of applicable computers whose ( exists names whose (it as string is "My Group") of bes computer group of it ) of bes fixlets whose(name of site of it as string is "BES Support" and id of it = 3172)```
  
