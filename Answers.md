@@ -56,5 +56,9 @@ Execution time is less for 2nd query.
 
 13. Tell me all machines that have become relevant for Fixlet X since Date Y (Where Y is selected by you)
     
-    ```Q:(names of it, last report time of it) of applicable computers whose(last report time of it > now-7*day) of bes fixlets whose (id of it = 3277)```
+    ``` unique values of names of computers  of ( results of bes fixlets ) whose (id of fixlet of it = 15 and  exists last became relevants whose ((year of it as string & "/" &  month of it as two digits &"/"& day_of_month of it as two digits) of date(local time zone) of it >= "2023/12/06") of it )  ```
+
+14. Tell me all machines that have become non-relevant for Fixlet X since Date Y, and relevant since Date W...
+
+```   unique values of names of computers  of ( results of bes fixlets ) whose (id of fixlet of it = 15 and  exists last became relevants whose ((year of it as string & "/" &  month of it as two digits &"/"& day_of_month of it as two digits) of date(local time zone) of it >= "2023/12/06") of it and exists last became nonrelevants whose ((year of it as string & "/" &  month of it as two digits &"/"& day_of_month of it as two digits) of date(local time zone) of it > "2023/12/01") of it )   ```    
 
