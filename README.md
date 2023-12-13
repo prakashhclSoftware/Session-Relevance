@@ -23,8 +23,7 @@
 11. Tell me what fixlets have this action script (Where the string is selected by you)
 
 12. Tell me what machines of a computer group are relevant to a given patch... Show me 2 ways...
-
-13. WHAT ARE OUR OPTIONS? What sucks less... And why is this a painful query?
+ WHAT ARE OUR OPTIONS? What sucks less... And why is this a painful query?
 
 14. Tell me all machines that have become relevant for Fixlet X since Date Y (Where Y is selected by you)
 
