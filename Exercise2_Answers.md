@@ -22,3 +22,18 @@ VMSIMCOESIM1,VMSIMCOECLI1
 Results:
 VMSIMCOECLI2
 VMSIMCOECLI1
+
+6. Show me all Fixlets that have a CVE field that is not valid, and show me there value... 
+
+
+ ```(name of it, cve id lists of it) of bes fixlets whose(cve id list of it does not contain "CVE-" and  cve id list of it does not contain "CAN-" )```
+ 
+T:4.6100
+
+Note: We are considering CVE Ids that start with CVE- and CAN- as valid one. We are considering Invalid CVE's as N/A, Unspecified, " " blank 
+
+alternate solution: 
+
+ ```(name of it, mime fields "x-fixlet-cve" of it) of bes fixlets whose(mime field "x-fixlet-cve" of it does not contain "CVE-" and mime field "x-fixlet-cve" of it does not contain "CAN-") ```
+
+T:4.0720
