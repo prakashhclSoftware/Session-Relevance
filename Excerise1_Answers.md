@@ -14,9 +14,17 @@
 
   ```(it, multiplicity of it) of unique values of  operating systems of bes computers```
 
+  ####Updated Answer
+
+  #### ```(it, multiplicity of it) of unique values of  operating systems of bes computers whose (exist operating system of it)```
+
 5. Order all machines by name (Hint: unique values)
 
   ```unique values of names of bes computers```
+
+#### Updated Answer
+
+  #### ```unique values of names of bes computers whose (exists name of it)```
 
 6. Tell me what machines are duplicates within your environment...
 
