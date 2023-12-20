@@ -23,6 +23,23 @@ Results:
 VMSIMCOECLI2
 VMSIMCOECLI1
 
+3. Show A list of all individual CVEs within the enviornment 
+
+```Q:unique values of substrings separated by " " of substrings separated by "," of  substrings separated by ";" of cve id lists of bes fixlets whose ( exists cve id lists of it )```
+
+OR 
+
+```Q:unique values of substrings separated by " " of substrings separated by "," of  substrings separated by ";" of cve id lists of bes fixlets whose ( exists cve id lists of it )  as trimmed string```
+
+Note:  2nd solution will remove the unwanted space before and after a each CVE-ID
+
+
+4. Show a listing of the individual CVEs and how many different fixlets have them associated... 
+
+
+```Q:(it, multiplicity of it) of unique values of substrings separated by " " of substrings separated by "," of  substrings separated by ";" of cve id lists of bes fixlets whose ( exists cve id lists of it )```
+
+
 6. Show me all Fixlets that have a CVE field that is not valid, and show me there value... 
 
 
