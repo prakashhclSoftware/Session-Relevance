@@ -14,7 +14,7 @@
 
   ```(it, multiplicity of it) of unique values of  operating systems of bes computers```
 
-  ####Updated Answer
+  #### Updated Answer
 
   #### ```(it, multiplicity of it) of unique values of  operating systems of bes computers whose (exist operating system of it)```
 
