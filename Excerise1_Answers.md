@@ -29,10 +29,19 @@
 8. Tell me the source, source sev, name and release date for all fixlets within the patches for win site AND are a member of group X
  
   ```(source of it, source severity of it, name of it,source release dates of it) of bes fixlets whose (name of site of it as string is "Enterprise Security" and  exists bes computer group whose (name of it as string is "X" and exists site whose (name of it is "Enterprise Security") of it ))```
+
+#### Updated Answer
+
+####  ```(source of it, source severity of it, name of it,source release dates of it) of fixlets whose(name of site of it="Enterprise Security") of results whose(exists computers whose(exists names whose(it = "test manual group") of bes computer groups of it) of it) of bes fixlets  ```
+
  
 9. Tell me what machines within a group are vulnerable for said CVE (Hint: a CVE is a mime field within a given fixlet)
     
   ```names of bes computer whose (exists bes computer group of it and exists relevant fixlets whose(cve id list of it contains "CVE-2023-20588") of it)```
+#### Updated answer
+
+#### ```names of bes computer whose (exists bes computer group whose (name of it = "My Group" ) of it and exists relevant fixlets whose(cve id list of it contains "CVE-2023-20588") of it)```
+
 
 10. Tell me what fixlets have this relevance (Where the string is selected by you)
 
@@ -53,6 +62,20 @@
 
   T:0.4090
 Execution time is less for 2nd query. 
+#### Updated answer
+Tested 1st solution in your environment, It's working
+
+#### ```names of members whose(exists id whose(it = 1) of relevant fixlets of it) of bes computer group whose(name of it as string is "test manual group")```
+
+Results:
+VMSIMCOECLI2
+VMSIMCOECLI1
+VMBFE02
+VMSIMCOESIM2
+VMSIMCOESIM1
+
+One more alternate solution for 12th Qeustion:
+#### ```names of members whose(exists relevant fixlets whose (id of it = 1) of it) of bes computer group whose(name of it as string is "test manual group")```
 
 13. Tell me all machines that have become relevant for Fixlet X since Date Y (Where Y is selected by you)
     
@@ -60,5 +83,14 @@ Execution time is less for 2nd query.
 
 14. Tell me all machines that have become non-relevant for Fixlet X since Date Y, and relevant since Date W...
 
-```   unique values of names of computers  of ( results of bes fixlets ) whose (id of fixlet of it = 15 and  exists last became relevants whose ((year of it as string & "/" &  month of it as two digits &"/"& day_of_month of it as two digits) of date(local time zone) of it >= "2023/12/06") of it and exists last became nonrelevants whose ((year of it as string & "/" &  month of it as two digits &"/"& day_of_month of it as two digits) of date(local time zone) of it > "2023/12/01") of it )   ```    
+```   unique values of names of computers  of ( results of bes fixlets ) whose (id of fixlet of it = 15 and  exists last became relevants whose ((year of it as string & "/" &  month of it as two digits &"/"& day_of_month of it as two digits) of date(local time zone) of it >= "2023/12/06") of it and exists last became nonrelevants whose ((year of it as string & "/" &  month of it as two digits &"/"& day_of_month of it as two digits) of date(local time zone) of it > "2023/12/01") of it )   ``` 
+
+#### Updated answer
+fixlet id 177 is giving results
+ 
+#### ```unique values of names of computers  of ( results of bes fixlets ) whose (id of fixlet of it = 177 and  exists last became relevants whose ((year of it as string & "/" &  month of it as two digits &"/"& day_of_month of it as two digits) of date(local time zone) of it >= "2023/12/06") of it and exists last became nonrelevants whose ((year of it as string & "/" &  month of it as two digits &"/"& day_of_month of it as two digits) of date(local time zone) of it > "2023/12/01") of it )  ```
+
+Results:
+VMBFE02
+
 
