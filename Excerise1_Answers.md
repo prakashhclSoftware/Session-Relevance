@@ -21,10 +21,20 @@
 6. Tell me what machines are duplicates within your environment...
 
   ```names of unique values whose (multiplicity of it > 1) of bes computers```
+
+ #### using unique values and a tupple
+
+ #### ```Q:(item 0 of it) of ((name of it, multiplicity of it) of unique values of bes computers) whose (item 1 of it>1)```
  
 7. Tell me what machines within a group are vulnerable for said fixlet (choose a fixlet within the BES support site that is relevant to all your machines)
    
   ```names of applicable computers whose ( exists names whose (it as string is "My Group") of bes computer group of it ) of bes fixlets whose(name of site of it as string is "BES Support" and id of it = 3172)```
+#### updated query
+#### ```names of members whose (exists ids whose(it = 134) of relevant fixlets whose(name of site of it = "BES Support") of it) of bes computer groups whose(name of it  = "test manual group")```
+
+Results:
+VMSIMCOECLI2
+VMSIMCOESIM1
  
 8. Tell me the source, source sev, name and release date for all fixlets within the patches for win site AND are a member of group X
  
