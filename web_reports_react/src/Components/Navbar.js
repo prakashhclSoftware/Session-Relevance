@@ -19,9 +19,12 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ListItemIcon from '@mui/material/ListItemIcon';
 import DraftsIcon from '@mui/icons-material/Drafts';
-import SendIcon from '@mui/icons-material/Send';
-import PriorityHighIcon from '@mui/icons-material/PriorityHigh';
+
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -144,7 +147,7 @@ const Navbar = () => {
             edge="start"
             color="inherit"
             aria-label="open drawer"
-            sx={{ mr: 1 }}
+            sx={{ mr: 1, pr :2 }}
             onClick={toggleDrawer}
           >
             <MenuIcon color="primary" />
@@ -197,32 +200,34 @@ const Navbar = () => {
 
         <MenuList>
           <MenuItem>
-            <ListItemIcon>
-              <SendIcon fontSize="small" />
+            <ListItemIcon sx={{ pl :1 }}>
+              <HomeOutlinedIcon />
             </ListItemIcon>
-            <Typography variant="inherit">Home</Typography>
+            <Typography variant="inherit" sx={{ pl :1 }} noWrap>Home</Typography>
           </MenuItem>
           <Divider />
           <MenuItem>
-            <ListItemIcon>
-              <PriorityHighIcon fontSize="small" />
+            <ListItemIcon sx={{ pl :1 }}>
+              <DescriptionOutlinedIcon />
+            
             </ListItemIcon>
-            <Typography variant="inherit">Report</Typography>
+            <Typography variant="inherit" sx={{ pl :1 }} noWrap>Report</Typography>
           </MenuItem>
           <Divider />
           <MenuItem>
-            <ListItemIcon>
-              <DraftsIcon fontSize="small" />
+            <ListItemIcon sx={{ pl :1 }}>
+              <ExploreOutlinedIcon  />
             </ListItemIcon>
-            <Typography variant="inherit" noWrap>
+            <Typography variant="inherit" sx={{ pl :1 }} noWrap>
               Explore
             </Typography>
           </MenuItem>
+          <Divider />
           <MenuItem>
-            <ListItemIcon>
-              <DraftsIcon fontSize="small" />
+            <ListItemIcon sx={{ pl :1 }}>
+              <SettingsOutlinedIcon  />
             </ListItemIcon>
-            <Typography variant="inherit" noWrap>
+            <Typography variant="inherit" sx={{ pl :1 }} noWrap>
               Administration
             </Typography>
           </MenuItem>
