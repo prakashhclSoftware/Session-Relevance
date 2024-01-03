@@ -18,13 +18,13 @@ import SearchIcon from "@mui/icons-material/Search";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ListItemIcon from '@mui/material/ListItemIcon';
-import DraftsIcon from '@mui/icons-material/Drafts';
-
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -128,7 +128,7 @@ const Drawer = styled(MuiDrawer, {
 }));
 
 const Navbar = () => {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = () => {
     setOpen(!open);
@@ -209,7 +209,6 @@ const Navbar = () => {
           <MenuItem>
             <ListItemIcon sx={{ pl :1 }}>
               <DescriptionOutlinedIcon />
-            
             </ListItemIcon>
             <Typography variant="inherit" sx={{ pl :1 }} noWrap>Report</Typography>
           </MenuItem>
@@ -218,18 +217,28 @@ const Navbar = () => {
             <ListItemIcon sx={{ pl :1 }}>
               <ExploreOutlinedIcon  />
             </ListItemIcon>
-            <Typography variant="inherit" sx={{ pl :1 }} noWrap>
-              Explore
-            </Typography>
+            <Typography variant="inherit" sx={{ pl :1 }} noWrap>Explore</Typography>
           </MenuItem>
           <Divider />
           <MenuItem>
             <ListItemIcon sx={{ pl :1 }}>
               <SettingsOutlinedIcon  />
             </ListItemIcon>
-            <Typography variant="inherit" sx={{ pl :1 }} noWrap>
-              Administration
-            </Typography>
+            <Typography variant="inherit" sx={{ pl :1 }} noWrap>Administration</Typography>
+          </MenuItem>
+          <Divider />
+          <MenuItem>
+            <ListItemIcon sx={{ pl :1 }}>
+              <DarkModeOutlinedIcon fontSize="small" />
+            </ListItemIcon>
+            <Typography variant="inherit" sx={{ pl :1 }} noWrap>Dark Mode</Typography>
+          </MenuItem>
+          <Divider />
+          <MenuItem>
+            <ListItemIcon sx={{ pl :1 }}>
+              <ChatOutlinedIcon fontSize="small" />
+            </ListItemIcon>
+            <Typography variant="inherit" sx={{ pl :1 }} noWrap>Just Ask</Typography>
           </MenuItem>
         </MenuList>
 
