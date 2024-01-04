@@ -2,7 +2,7 @@
 
 This was a demo project that is made as a part of the Session relevance assignment.
 
-## To run the application in your system perform the following steps
+#### To run the application in your system perform the following steps
 
 1. First download/clone the project into your system.
 
