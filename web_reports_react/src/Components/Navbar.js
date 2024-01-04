@@ -137,7 +137,7 @@ const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
-        position="absolute"
+        position="sticky"
         sx={{ backgroundColor: "white", color: "black" }}
         open={open}
       >
@@ -184,7 +184,7 @@ const Navbar = () => {
           </IconWrapper>
         </Toolbar>
       </AppBar>
-      <Drawer variant="permanent" open={open}>
+      {/* <Drawer variant="permanent" open={open}>
         <Toolbar
           sx={{
             display: "flex",
@@ -243,11 +243,11 @@ const Navbar = () => {
         </MenuList>
 
         <List component="nav">
-          {/* {mainListItems} */}
+          {/* {mainListItems} 
           <Divider sx={{ my: 1 }} />
-          {/* {secondaryListItems} */}
+          {/* {secondaryListItems} 
         </List>
-      </Drawer>
+      </Drawer> */}
     </Box>
   );
 };

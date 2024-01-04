@@ -1,32 +1,33 @@
-import React from 'react';
 import { Box } from '@mui/material';
-import BarChart from './BarChart';
+import BarChart from './Charts';
+import { BubbleChart, HorizontalChart } from './Charts';
+
 
 const Feed = () => {
   const boxStyle = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    margin: 2,
+    margin: "30px 5px",
   };
 
   const barChartContainerStyle = {
-    width: 400,
+    width: 450,
   };
 
   return (
     <Box style={boxStyle}>
       <div style={barChartContainerStyle}>
-        <BarChart />
+        <HorizontalChart />
       </div>
       <div style={barChartContainerStyle}>
         <BarChart />
       </div>
       <div style={barChartContainerStyle}>
-        <BarChart />
+        <BubbleChart />
       </div>
     </Box>
   );
 };
 
-export default Feed;
+export default Feed
